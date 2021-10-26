@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-
-
 import numpy as np
 from random import choice
 
@@ -48,9 +45,6 @@ def get_last_digit(number):
     return int(str(number)[-1:])
 
 
-def number_length():
-    if
-
 def is_valid(nhs_number):
 
     # Define weights (in numpy array)
@@ -76,18 +70,18 @@ def is_valid(nhs_number):
 
     # Check if the valid checksum is equal to the one used in the 10-digit number
     if instance_checksum == valid_checksum:
-        print "%s is a valid NHS Number - incorrect checksum" % (nhs_number)
+        print ("%s is a valid NHS Number - incorrect checksum" % (nhs_number))
         return True
     else:
-        print "%s is an invalid NHS Number - incorrect checksum" % (nhs_number)
+        print ("%s is an invalid NHS Number - incorrect checksum" % (nhs_number))
         return False
 
 
 def main():
 
     nhs_number = 1745438914
-    print "NHS Number:", nhs_number
-    print is_valid(nhs_number)
+    print ("NHS Number:", nhs_number)
+    print (is_valid(nhs_number))
 
 
 
